@@ -6,10 +6,11 @@ function App() {
   const fruit = () => {
     console.warn('Function called');
   };
+  const textStyle = {fontSize: 30};
   return (
     <View>
-      <Text style={{fontSize: 30}}>Hi</Text>
-      <Button title={`'Press Me'`} />
+      <Text style={textStyle}>Hi</Text>
+      <Button onPress={fruit} title={"'Press Me'"} />
     </View>
   );
 }
