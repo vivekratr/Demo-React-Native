@@ -1,11 +1,15 @@
 import React from 'react';
 
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
 
 function App() {
+  const fruit = () => {
+    console.warn('Function called');
+  };
   return (
     <View>
-      <Text>Hi</Text>
+      <Text style={{fontSize: 30}}>Hi</Text>
+      <Button title={`'Press Me'`} />
     </View>
   );
 }
